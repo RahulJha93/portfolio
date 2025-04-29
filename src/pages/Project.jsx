@@ -28,10 +28,31 @@ const Project = () => {
       github: "https://github.com/RahulJha93/WeatherApp",
       liveLink: "https://rahul-jha-weathervue.netlify.app/",
     },
+    // {
+    //   image: Img3,
+    //   title: "FileShare",
+    //   description: "A weather app built with React and JavaScript that provides real-time weather data and forecasts for various locations using a clean, user-friendly interface.",
+    //   github: "https://github.com/RahulJha93/WeatherApp",
+    //   liveLink: "https://rahul-jha-weathervue.netlify.app/",
+    // },
+    // {
+    //   image: Img3,
+    //   title: "Regional AI",
+    //   description: "A weather app built with React and JavaScript that provides real-time weather data and forecasts for various locations using a clean, user-friendly interface.",
+    //   github: "https://github.com/RahulJha93/WeatherApp",
+    //   liveLink: "https://rahul-jha-weathervue.netlify.app/",
+    // },
+    // {
+    //   image: Img3,
+    //   title: "AI Candidate Ranking System",
+    //   description: "A weather app built with React and JavaScript that provides real-time weather data and forecasts for various locations using a clean, user-friendly interface.",
+    //   github: "https://github.com/RahulJha93/WeatherApp",
+    //   liveLink: "https://rahul-jha-weathervue.netlify.app/",
+    // },
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32" id="projects">
+    <section className="w-full py-12 md:py-24 lg:py-16" id="projects">
       <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
         My Latest Projects
       </h2>

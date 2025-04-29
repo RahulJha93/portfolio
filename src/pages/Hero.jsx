@@ -54,7 +54,7 @@ const Hero = () => {
               </a>
               <a
                 className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                href="https://drive.google.com/file/d/1H2JDHLH8jd7lmxUkmXtC_VkDwo5wFce2/view?usp=sharing"
+                href="https://drive.google.com/file/d/1aN-xjb3MqKJ7lCiMyRJkmHwmgBcTt5h3/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >

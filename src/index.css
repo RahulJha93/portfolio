@@ -74,3 +74,169 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* Cosmic Animated Background */
+  .hero-section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at bottom, #23243a 0%, #0a0a23 100%);
+  }
+  .cosmic-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .stars, .stars2, .stars3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+  .stars {
+    background: url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/demo/stars.png') repeat;
+    animation: moveStars 100s linear infinite;
+    opacity: 0.5;
+  }
+  .stars2 {
+    background: url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/demo/stars2.png') repeat;
+    animation: moveStars 200s linear infinite;
+    opacity: 0.3;
+  }
+  .stars3 {
+    background: url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/demo/stars3.png') repeat;
+    animation: moveStars 300s linear infinite;
+    opacity: 0.2;
+  }
+  @keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 10000px 10000px; }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 6rem;
+  }
+  .announcement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .badge-new {
+    background: #3b82f6;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  .announcement-text {
+    color: #b3b3b3;
+    font-size: 1rem;
+  }
+  .hero-headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    color: #fff;
+  }
+  .hero-headline .italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #e0e0e0;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .hero-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    object-fit: cover;
+  }
+  .highlight {
+    font-weight: 600;
+    color: #fff;
+  }
+  .desc {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    font-style: italic;
+  }
+  .hero-cta {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .cta-btn {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(90deg, #6e48aa 0%, #9d50bb 100%);
+    color: #fff;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 24px 0 rgba(110,72,170,0.15);
+    border: none;
+    outline: none;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .cta-btn:hover {
+    background: linear-gradient(90deg, #9d50bb 0%, #6e48aa 100%);
+    transform: translateY(-2px) scale(1.04);
+  }
+  .hero-email {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    .hero-headline {
+      font-size: 1.5rem;
+    }
+    .hero-content {
+      padding-top: 3rem;
+    }
+    .hero-avatar {
+      width: 36px;
+      height: 36px;
+    }
+    .hero-section {
+      min-height: 80vh;
+    }
+  }
